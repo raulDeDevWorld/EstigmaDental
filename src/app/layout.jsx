@@ -12,13 +12,13 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/logo.png" />
         <link rel='manifest' href='/manifest.json' />
         <link rel='apple-touch-icon' href='/logo.png' />
-        <meta name="theme-color" content="#11498B" />
-        <meta name="msapplication-navbutton-color" content="#11498B" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="#11498B" />
-        <meta name="description" content="Especialistas en importación de electrodomesticos." />
-        <meta name="keywords" content="VONUX" />
-        <meta name="author" content="VONUX" />
-        <title>VONUX</title>
+        <meta name="theme-color" content="#000032" />
+        <meta name="msapplication-navbutton-color" content="#000032" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="#000032" />
+        <meta name="description" content="Especialistas en servicios odontologicos." />
+        <meta name="keywords" content="ESTIGMA DENTAL" />
+        <meta name="author" content="ESTIGMA DENTAL" />
+        <title>ESTIGMA DENTAL</title>
       </head>
       <body className={`${inter.className} bg-white`}>
       <UserProvider>

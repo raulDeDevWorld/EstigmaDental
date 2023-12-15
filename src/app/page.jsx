@@ -65,8 +65,8 @@ function Home() {
           <h1 className='w-full hidden  lg:block text-center text-[12px] lg:text-[16px]'>{userDB.frontPage['direccion']} </h1>
           <br />
           <div>
-            <h1 className='w-full text-center text-[24px] lg:text-[30px]'><span className='text-[#422C39] font-bold'>{userDB.frontPage['nombre']}</span><span className='text-[#11498B] font-bold	'>{userDB.frontPage['apellidos']}</span></h1>
-            <h1 className='w-full text-center text-[24px] lg:text-[30px]'><span className='text-[#422C39] font-bold'>{userDB.frontPage['especialidad 1']} </span><span className='text-[#11498B] font-bold	'>{userDB.frontPage['especialidad 2']}</span></h1>
+            <h1 className='w-full text-center text-[24px] lg:text-[30px]'><span className='text-[#422C39] font-bold'>{userDB.frontPage['nombre']}</span><span className='text-[#000032] font-bold	'>{userDB.frontPage['apellidos']}</span></h1>
+            <h1 className='w-full text-center text-[24px] lg:text-[30px]'><span className='text-[#422C39] font-bold'>{userDB.frontPage['especialidad 1']} </span><span className='text-[#000032] font-bold	'>{userDB.frontPage['especialidad 2']}</span></h1>
           </div>
           <br />
           {/* <div className='w-full flex justify-around' >
@@ -83,7 +83,7 @@ function Home() {
           */}
           <div className='w-full  lg:grid lg:grid-cols-2 lg:gap-5 '>
             <a href="#Servicios" className='w-full'><Button theme="Secondary" >Servicios</Button></a>
-            <Link href={`https://api.whatsapp.com/send?phone=${userDB.frontPage['whatsapp']}&text=Hola%20VONUX%20IMPORTACIONES%20,%20quisiera%20hacer%20una%20consulta...%20`} className='w-full'><Button theme="Primary" >Contactar</Button></Link>
+            <Link href={`https://api.whatsapp.com/send?phone=${userDB.frontPage['whatsapp']}&text=Hola%20ESTIGMA%20DENTAL%20,%20quisiera%20hacer%20una%20consulta...%20`} className='w-full'><Button theme="Primary" >Contactar</Button></Link>
           </div>
         </div>
       </section>
@@ -98,7 +98,7 @@ function Home() {
                   <CardH image={i['url']} service={i['titulo de servicio']} description={i['descripcion de servicio']} remote={i['servicio remoto']} cost={i['costo']} time={i['tiempo de entrega']} whatsapp={i['whatsapp de servicio']} i={i} index={index}></CardH>
                   <div className="inline-flex items-center justify-center w-full">
                     <hr className="w-64 h-px my-8 bg-[#422C39] border-0 dark:bg-gray-700" />
-                    <span className="absolute px-3 font-medium text-[#11498B] -translate-x-1/2 bg-white left-1/2 dark:text-white dark:bg-gray-900 z-0">•</span>
+                    <span className="absolute px-3 font-medium text-[#000032] -translate-x-1/2 bg-white left-1/2 dark:text-white dark:bg-gray-900 z-0">•</span>
                   </div>
                 </div>
               )
@@ -155,7 +155,7 @@ function Home() {
         <div className='absolute top-0 left-0  w-full h-[50px] bg-[#00826A] rounded-t-[10px]'>
           <img src="/logo.png" className='absolute h-[35px] w-[35px] left-[5px] top-[7.5px]  rounded-[35px]' alt="" />
           <div className='absolute flex flex-col left-[50px] top-[12px] text-white text-[12px]'>
-            <span className='block text-[10px] m-0'>VONUX</span>
+            <span className='block text-[10px] m-0'>ESTIGMA DENTAL</span>
             <span className='text-[8px] m-0'>en linea</span>
           </div>
           <span className='absolute  right-[10px] top-[12px] px-[7.5px] py-[3px]  border-[1px] text-white text-[12px] rounded-[5px]' onClick={whatsappHandler} >X</span>
@@ -176,7 +176,7 @@ function Home() {
         </div>
       </div>
 
-      <footer className="w-screen bg-[#11498B] text-center text-white mt-[70px] z-20" id="Contactos">
+      <footer className="w-screen bg-[#000032] text-center text-white mt-[70px] z-20" id="Contactos">
         <div className="p-4">
           <h3 className={`w-full text-white text-left font-bold text-[26px] pl-[5px]`}>Contactos</h3>
           <br />
